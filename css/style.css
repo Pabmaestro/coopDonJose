@@ -181,12 +181,11 @@ footer{
 .seccionImagenes{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
     column-gap: 10px;
     row-gap: 15px;
     justify-items: center;
     align-items: center;
-    object-fit: cover;
 }
 .seccionImagenes img{
     border-left: 7px solid #352504;
@@ -195,22 +194,7 @@ footer{
     height: 30em;
     width: 25em;
 }
-.seccionImagenes2{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(1,1fr);
-    justify-items: center;
-    align-items: center;
-    column-gap: 10px;
-    row-gap: 15px;
-}
-.seccionImagenes2 div img{
-    border-left: 7px solid #352504;
-    border-right: 7px solid #352504;
-    border-bottom: 7px solid #352504;
-    height: 30em;
-    width: 25em;
-}
+
 /*INFORMACION*/
 .subtitulo{
     font-family: 'Bebas Neue', cursive;
