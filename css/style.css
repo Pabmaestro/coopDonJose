@@ -180,17 +180,20 @@ footer{
 }
 .seccionImagenes{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
+    /* grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr); */
     column-gap: 10px;
-    row-gap: 15px;
+    /* row-gap: 15px; */
     justify-items: center;
     align-items: center;
+    padding-bottom: 5rem;
+    flex-wrap: wrap;
 }
 .seccionImagenes img{
     border-left: 7px solid #352504;
     border-right: 7px solid #352504;
     border-bottom: 7px solid #352504;
+    border-top: 7px solid #352504;
     height: 30em;
     width: 25em;
 }
@@ -320,4 +323,15 @@ footer{
     width: 10em;
 
 }
+ @media screen and (min-width:700px) {
+    .seccionImagenes{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2,1fr);
+    }
+    .nav2{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     
+ }
