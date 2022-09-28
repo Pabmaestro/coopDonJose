@@ -32,7 +32,7 @@ body header h1 {
     margin-right: 10px;
 }
 #mainmenu li a svg{ 
-  padding: 10px;
+  margin-left: 10px;
 }
 .textFooter p{
     font-family: 'Bebas Neue', cursive;
@@ -282,15 +282,18 @@ footer{
 .mainFaq{
     font-family: 'Bebas Neue', cursive;
     font-size: x-large;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-content: center;
+    align-content: center; */
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
     padding-left: 5em;
     
 }
 .li1{
     text-decoration: none;
     padding-top: 1em;
+    flex-wrap: wrap;
 }
 .li1 li{
     display: flex;
@@ -299,16 +302,17 @@ footer{
 }
 .main2{
     min-height: calc(100vh);
+    flex-wrap: wrap;
 }
 .sectionLi{
     display: flex;
     flex-direction: row;
-    
+    /* flex-wrap: wrap;  */
 }
 .form{
-    display: column;
+   
     text-align: center;
-    padding-left: 10em;
+    padding-left: 5em;
 }
 .label{
     font-family: 'Bebas Neue', cursive;
@@ -339,19 +343,46 @@ footer{
     .seccionImagenes img{
         height: 100%;
     }
+    /* NAVBAR */
     #mainmenu{
-        flex-direction: row;
-        /* flex-wrap: wrap; */
-        height: 100%;
+        /* font-size: large; */
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,2fr);     
+    }
+    #mainmenu li a svg{
+        flex-wrap: wrap;
+        margin: 0%;
+        padding: 0%;
     }
     .nav2 div{
         width: 100%;
     }
+    /* FAQ */
+    .mainFaq{
+        font-size: medium;
+       flex-direction: column;
+       justify-content: center;
+    }
+    .mainFaq h3{
+        padding-top: 10px;
+        padding-right: 60px;
+        
+    }
+    .menutxt{
+        font-size: x-large;
+    }
+    .sectionLi{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .form{
+        margin-right: 50em;
+    }
+    .li1{
+        padding-right: 5em;
+        padding-bottom: 10em;
+    }
 
- }
- @media only screen and (max-width:768px) {
-    
- }
- @media only screen and (max-width:1200px){
-
+ @media only screen and (max-width:768px) {  
  }
