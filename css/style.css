@@ -26,6 +26,11 @@ body header h1 {
     margin-left: 10px;
     margin-right: 10px;
 }
+#mainmenu li:hover{
+    transform: scale(1,1);
+    border: 5px solid #F5D894 ;
+    border-radius: 20px;
+}
 #mainmenu li a svg{ 
   margin-left: 10px;
 }
@@ -177,16 +182,19 @@ footer{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     column-gap: 30px;
+    row-gap: 30px;
     justify-items: center;
     align-items: center;
     padding-bottom: 5rem;
     flex-wrap: wrap;
+    margin: 0px 30px 0px 30px;
 }
 .seccionImagenes img{
     border-left: 7px solid #352504;
     border-right: 7px solid #352504;
     border-bottom: 7px solid #352504;
     border-top: 7px solid #352504;
+    border-radius: 15px;
     height: 100%;
     width: 100%;
 }
@@ -293,7 +301,6 @@ footer{
     flex-direction: row;
 }
 .form{
-   
     text-align: center;
     padding-left: 5em;
 }
