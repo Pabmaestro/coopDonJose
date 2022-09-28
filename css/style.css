@@ -30,6 +30,7 @@ body header h1 {
     transform: scale(1,1);
     border: 5px solid #F5D894 ;
     border-radius: 20px;
+    padding: 0px 5px 0px 5px;
 }
 #mainmenu li a svg{ 
   margin-left: 10px;
