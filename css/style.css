@@ -367,5 +367,31 @@ footer{
     }
 }
 
- @media only screen and (max-width:768px) {  
+ @media only screen and (max-width:768px) {
+    .seccionImagenes{
+    grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3,1fr);
+    }
+
+
+    .sectionLi{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .form{
+        padding: 0px;
+    }
+    .form-action{
+        display: flex;
+        flex-direction: column;
+    }
+    .textArea{
+       margin: 10px 10px 10px 10px;
+    }
+    .mainFaq{
+        justify-content: center;
+        padding: 0px;
+       
+    }
  }
