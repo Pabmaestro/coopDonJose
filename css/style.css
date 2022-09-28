@@ -18,14 +18,9 @@ body header h1 {
     font-weight: 30px;
     text-align: left;
     font-size: 30px;
-    /* display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around; */
     display: grid;
     grid-template-columns: repeat(4, 2fr);
     justify-items: center;
-   /*  grid-template-rows:repeat(1,fr); */
 }
 #mainmenu li {
     margin-left: 10px;
@@ -86,9 +81,6 @@ footer {
 .indexMain .divMain {
     display: flex;
     justify-content: center;
-   /*  display: grid;
-    grid-template-columns: repeat(3,1fr); */
-    /* grid-template-rows: repeat(1,1fr); */
 }
 
  .indexMain .divMain .img-2{
@@ -186,7 +178,6 @@ footer{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     column-gap: 30px;
-    /* row-gap: 15px; */
     justify-items: center;
     align-items: center;
     padding-bottom: 5rem;
@@ -226,7 +217,6 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-  /*   flex-wrap: wrap; */
     padding-right: 1rem; 
     padding-bottom: 2rem;
 }
@@ -245,8 +235,6 @@ footer{
 }
 .sectionPadre{
     display: flex;
-    /* flex-direction: row; */
-    
 }
 .wifitxt{
     text-align: center;
@@ -282,9 +270,6 @@ footer{
 .mainFaq{
     font-family: 'Bebas Neue', cursive;
     font-size: x-large;
-    /* display: flex;
-    flex-direction: column;
-    align-content: center; */
     display: grid;
     grid-template-columns: repeat(1,1fr);
     padding-left: 5em;
@@ -307,7 +292,6 @@ footer{
 .sectionLi{
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap;  */
 }
 .form{
    
@@ -335,7 +319,6 @@ footer{
 /* RESPONSIVE MOBILE*/
  @media only screen and (max-width:576px) {
     .seccionImagenes{
-      /* display: grid; */
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(6,1fr);
       flex-wrap: wrap;
@@ -345,7 +328,6 @@ footer{
     }
     /* NAVBAR */
     #mainmenu{
-        /* font-size: large; */
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(1,2fr);     
@@ -383,6 +365,7 @@ footer{
         padding-right: 5em;
         padding-bottom: 10em;
     }
+}
 
  @media only screen and (max-width:768px) {  
  }
