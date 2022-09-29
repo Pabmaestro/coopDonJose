@@ -375,7 +375,7 @@ footer {
 
     /* NAVBAR */
     #mainmenu {
-        display: grid;
+        /* display: grid; */
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(1, 2fr);
     }
@@ -384,9 +384,9 @@ footer {
         flex-wrap: wrap;
         margin: 0%;
         padding: 0%;
+        display: none;
 
     }
-
     .nav2 div {
         width: 100%;
     }
@@ -430,6 +430,9 @@ footer {
     .seccionImagenes {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
+    }
+    #mainmenu li a svg{
+        display: none;
     }
 
     /* FAQ */
