@@ -48,6 +48,8 @@ body header h1 {
 /*colores mainmenu*/
 .logoNav a {
     color: #F5D894;
+    font-family: 'Bebas Neue', cursive;
+    font-size: xx-large;
 }
 
 a {
