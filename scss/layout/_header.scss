@@ -1,0 +1,17 @@
+#mainmenu{
+    color: #822421;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 30px;
+    text-align: left;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    justify-items: center;
+    
+    li{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
