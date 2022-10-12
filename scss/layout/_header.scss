@@ -1,6 +1,33 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+body{
+    @include bodyColors; 
+    header{
+        a{
+            color: $color2;
+            font-family: $fontF;
+            text-decoration: none;
+            font-size: xx-large;
+        }
+    }
+}
+header{
+    position: sticky;
+    top: 0;
+    background-color:$color3;
+    .logoNav{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; 
+        .logo1{
+            border-radius: 10px;
+            margin: 10px;
+        }
+    }   
+}
+
 #mainmenu{
-    color: #822421;
-    text-decoration: none;
+    color: #822421; 
     list-style: none;
     font-family: 'Bebas Neue', cursive;
     font-weight: 30px;
@@ -13,5 +40,18 @@
     li{
         margin-left: 10px;
         margin-right: 10px;
+    }
+    li:hover{
+        transform: scale(1, 1);
+        border: 5px solid $color2;
+        border-radius: 20px;
+        padding: 0px 5px 0px 5px;
+    }
+    a{
+        text-decoration: none;
+        list-style: none;
+    }
+    a svg{
+        margin-left: 10px;
     }
 }

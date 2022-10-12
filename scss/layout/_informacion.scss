@@ -1,0 +1,76 @@
+@import "../utilities/mixins";
+@import "../utilities/variables";
+.subtitulo{
+    font-family: $fontF;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.subtitulo3 {
+    font-family: $fontF;
+    text-align: center;
+    color: $color3;
+    font-size: x-large;
+    border-top: 7px solid $color3;
+}
+.horarios {
+    font-family: $fontF;
+    text-align: center;
+    color: $color1;
+    font-size: xx-large;
+}
+.localizacion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+}
+.localizaciontxt {
+    font-family: $fontF;
+    color: #352504;
+    font-size: xx-large;
+    align-content: center;
+    padding-right: 12rem;
+}
+.wifi1 {
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    p{
+        font-family: $fontF;
+        color: $color1;
+        text-align: center;
+        font-size: x-large;
+    }
+}
+.sectionPadre {
+    display: flex;
+}
+.wifitxt {
+    text-align: center;
+    font-family: $fontF;
+    color: $color3;
+    font-size: xx-large;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.personaltxt {
+    text-align: center;
+    font-family: $fontF;
+    color: $color3;
+    font-size: xx-large;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.bebidastxt {
+    text-align: center;
+    font-family: $fontF;
+    color: $color3;
+    font-size: xx-large;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+

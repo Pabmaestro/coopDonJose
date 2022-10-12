@@ -1,0 +1,36 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+footer{
+    background-color: #352504;
+    @include footerStyle;
+    .footerimg{
+        height: 100px;
+        margin-top: -100px;
+        margin-bottom: -11px;
+        z-index: 25;
+    }
+    nav{
+        div{
+            display: flex;
+            justify-content: flex-end;
+            a{
+            svg{
+                margin-top: 10px;
+                margin-left: 10px;
+                margin-right: 10px;
+                color: $color2;
+            }
+        }
+    }
+}
+.textFooter {
+        display: flex;
+        text-align: center;
+        justify-content: flex-start;
+    p { 
+        font-family:$fontF;
+        font-size: x-large;
+    }
+}
+
+}

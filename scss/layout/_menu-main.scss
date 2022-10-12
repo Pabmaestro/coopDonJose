@@ -1,0 +1,13 @@
+@import "../utilities/mixins";
+@import "../utilities/variables";
+.menutxt{
+    @include menu-txt;
+}
+.carta{
+    @include carta;
+    img{
+        border-top: 7px solid #822421;
+        height: 600px;
+        padding-bottom: 100px;
+    }
+}

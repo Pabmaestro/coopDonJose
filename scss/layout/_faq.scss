@@ -1,0 +1,51 @@
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+.mainFaq {
+    font-family: $fontF;
+    font-size: x-large;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 5em;
+    h3{
+        text-align: center;
+    }
+}
+.li1 {
+    text-decoration: none;
+    list-style: none;
+    padding-top: 1em;
+    flex-wrap: wrap;
+    li{
+        display: flex;
+        padding-top: 11px;
+        color: #ED2F38;
+    }
+}
+.main2 {
+    min-height: calc(100vh);
+    flex-wrap: wrap;
+}
+.sectionLi {
+    display: flex;
+    flex-direction: row;
+}
+.form {
+    text-align: center;
+    padding-left: 5em;
+}
+.label {
+    font-family: $fontF;
+    font-size: x-large;
+}
+.textArea {
+    border-radius: 1em;
+}
+.boton {
+    font-family: $fontF;
+    font-size: large;
+    color: #F5D894;
+    background-color: #822421;
+    width: 10em;
+}
+
