@@ -1,5 +1,6 @@
 @import "../utilities/variables";
 @import "../utilities/mixins";
+@import "../components/media";
 body{
     @include bodyColors; 
     header{

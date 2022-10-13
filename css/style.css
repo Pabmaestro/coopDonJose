@@ -16,7 +16,6 @@
   }
   /* NAVBAR */
   #mainmenu {
-    /* display: grid; */
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 2fr);
   }
@@ -57,6 +56,15 @@
     padding-right: 5em;
     padding-bottom: 10em;
   }
+  .wifi1 {
+    display: none;
+  }
+  .localizacion-img {
+    width: 30em;
+    height: 30em;
+    margin: 1em;
+    padding: 1em;
+  }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .seccionImagenes {
@@ -86,14 +94,139 @@
     justify-content: center;
     padding: 0px;
   }
+  .mainFaq h3 {
+    align-items: flex-start;
+    text-align: start;
+    margin: 10px;
+  }
   .li1 {
     padding-left: 30px;
     padding-bottom: 100px;
+  }
+  /* INFORMACION */
+  .wifi1 {
+    display: none;
+  }
+  .localizacion {
+    align-content: center;
+  }
+  .localizacion-img {
+    width: 30em;
+    height: 30em;
+    margin: 1em;
+    padding: 1em;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .seccionImagenes {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    flex-wrap: wrap;
+  }
+  .seccionImagenes img {
+    height: 100%;
+  }
+  /* NAVBAR */
+  #mainmenu {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+  }
+  #mainmenu li a svg {
+    flex-wrap: wrap;
+    margin: 0%;
+    padding: 0%;
+    display: none;
+  }
+  .nav2 div {
+    width: 100%;
+  }
+  .footerimg img {
+    height: 100%;
+    width: 100%;
+  }
+  /* FAQ */
+  .mainFaq {
+    font-size: medium;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mainFaq h3 {
+    padding-top: 10px;
+    padding-right: 60px;
+  }
+  .menutxt {
+    font-size: x-large;
+  }
+  .sectionLi {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .form {
+    margin-right: 50em;
+  }
+  .li1 {
+    padding-right: 5em;
+    padding-bottom: 10em;
+  }
+  .wifi1 {
+    display: none;
+  }
+  .localizacion-img {
+    width: 30em;
+    height: 30em;
+    margin: 1em;
+    padding: 1em;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .seccionImagenes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #mainmenu li a svg {
+    display: none;
+  }
+  /* FAQ */
+  .sectionLi {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .form {
+    padding: 0px;
+  }
+  .form-action {
+    display: flex;
+    flex-direction: column;
+  }
+  .textArea {
+    margin: 10px 10px 10px 10px;
+  }
+  .mainFaq {
+    justify-content: center;
+    padding: 0px;
   }
   .mainFaq h3 {
     align-items: flex-start;
     text-align: start;
     margin: 10px;
+  }
+  .li1 {
+    padding-left: 30px;
+    padding-bottom: 100px;
+  }
+  /* INFORMACION */
+  .wifi1 {
+    display: none;
+  }
+  .localizacion {
+    align-content: center;
+  }
+  .localizacion-img {
+    width: 30em;
+    height: 30em;
+    margin: 1em;
+    padding: 1em;
   }
 }
 body {
@@ -154,6 +287,118 @@ header .logoNav .logo1 {
   margin-left: 10px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .seccionImagenes {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    flex-wrap: wrap;
+  }
+  .seccionImagenes img {
+    height: 100%;
+  }
+  /* NAVBAR */
+  #mainmenu {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+  }
+  #mainmenu li a svg {
+    flex-wrap: wrap;
+    margin: 0%;
+    padding: 0%;
+    display: none;
+  }
+  .nav2 div {
+    width: 100%;
+  }
+  .footerimg img {
+    height: 100%;
+    width: 100%;
+  }
+  /* FAQ */
+  .mainFaq {
+    font-size: medium;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mainFaq h3 {
+    padding-top: 10px;
+    padding-right: 60px;
+  }
+  .menutxt {
+    font-size: x-large;
+  }
+  .sectionLi {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .form {
+    margin-right: 50em;
+  }
+  .li1 {
+    padding-right: 5em;
+    padding-bottom: 10em;
+  }
+  .wifi1 {
+    display: none;
+  }
+  .localizacion-img {
+    width: 30em;
+    height: 30em;
+    margin: 1em;
+    padding: 1em;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .seccionImagenes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #mainmenu li a svg {
+    display: none;
+  }
+  /* FAQ */
+  .sectionLi {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .form {
+    padding: 0px;
+  }
+  .form-action {
+    display: flex;
+    flex-direction: column;
+  }
+  .textArea {
+    margin: 10px 10px 10px 10px;
+  }
+  .mainFaq {
+    justify-content: center;
+    padding: 0px;
+  }
+  .mainFaq h3 {
+    align-items: flex-start;
+    text-align: start;
+    margin: 10px;
+  }
+  .li1 {
+    padding-left: 30px;
+    padding-bottom: 100px;
+  }
+  /* INFORMACION */
+  .wifi1 {
+    display: none;
+  }
+  .localizacion {
+    align-content: center;
+  }
+  .localizacion-img {
+    width: 30em;
+    height: 30em;
+    margin: 1em;
+    padding: 1em;
+  }
+}
 footer {
   background-color: #352504;
   padding-top: 10px;
@@ -189,6 +434,118 @@ footer .textFooter p {
   font-size: x-large;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .seccionImagenes {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    flex-wrap: wrap;
+  }
+  .seccionImagenes img {
+    height: 100%;
+  }
+  /* NAVBAR */
+  #mainmenu {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+  }
+  #mainmenu li a svg {
+    flex-wrap: wrap;
+    margin: 0%;
+    padding: 0%;
+    display: none;
+  }
+  .nav2 div {
+    width: 100%;
+  }
+  .footerimg img {
+    height: 100%;
+    width: 100%;
+  }
+  /* FAQ */
+  .mainFaq {
+    font-size: medium;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mainFaq h3 {
+    padding-top: 10px;
+    padding-right: 60px;
+  }
+  .menutxt {
+    font-size: x-large;
+  }
+  .sectionLi {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .form {
+    margin-right: 50em;
+  }
+  .li1 {
+    padding-right: 5em;
+    padding-bottom: 10em;
+  }
+  .wifi1 {
+    display: none;
+  }
+  .localizacion-img {
+    width: 30em;
+    height: 30em;
+    margin: 1em;
+    padding: 1em;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .seccionImagenes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #mainmenu li a svg {
+    display: none;
+  }
+  /* FAQ */
+  .sectionLi {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .form {
+    padding: 0px;
+  }
+  .form-action {
+    display: flex;
+    flex-direction: column;
+  }
+  .textArea {
+    margin: 10px 10px 10px 10px;
+  }
+  .mainFaq {
+    justify-content: center;
+    padding: 0px;
+  }
+  .mainFaq h3 {
+    align-items: flex-start;
+    text-align: start;
+    margin: 10px;
+  }
+  .li1 {
+    padding-left: 30px;
+    padding-bottom: 100px;
+  }
+  /* INFORMACION */
+  .wifi1 {
+    display: none;
+  }
+  .localizacion {
+    align-content: center;
+  }
+  .localizacion-img {
+    width: 30em;
+    height: 30em;
+    margin: 1em;
+    padding: 1em;
+  }
+}
 .indexMain h2 {
   font-family: "Bebas Neue", cursive;
   font-size: 50px;
@@ -219,6 +576,118 @@ footer .textFooter p {
   padding-top: 70px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .seccionImagenes {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    flex-wrap: wrap;
+  }
+  .seccionImagenes img {
+    height: 100%;
+  }
+  /* NAVBAR */
+  #mainmenu {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+  }
+  #mainmenu li a svg {
+    flex-wrap: wrap;
+    margin: 0%;
+    padding: 0%;
+    display: none;
+  }
+  .nav2 div {
+    width: 100%;
+  }
+  .footerimg img {
+    height: 100%;
+    width: 100%;
+  }
+  /* FAQ */
+  .mainFaq {
+    font-size: medium;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mainFaq h3 {
+    padding-top: 10px;
+    padding-right: 60px;
+  }
+  .menutxt {
+    font-size: x-large;
+  }
+  .sectionLi {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .form {
+    margin-right: 50em;
+  }
+  .li1 {
+    padding-right: 5em;
+    padding-bottom: 10em;
+  }
+  .wifi1 {
+    display: none;
+  }
+  .localizacion-img {
+    width: 30em;
+    height: 30em;
+    margin: 1em;
+    padding: 1em;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .seccionImagenes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #mainmenu li a svg {
+    display: none;
+  }
+  /* FAQ */
+  .sectionLi {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .form {
+    padding: 0px;
+  }
+  .form-action {
+    display: flex;
+    flex-direction: column;
+  }
+  .textArea {
+    margin: 10px 10px 10px 10px;
+  }
+  .mainFaq {
+    justify-content: center;
+    padding: 0px;
+  }
+  .mainFaq h3 {
+    align-items: flex-start;
+    text-align: start;
+    margin: 10px;
+  }
+  .li1 {
+    padding-left: 30px;
+    padding-bottom: 100px;
+  }
+  /* INFORMACION */
+  .wifi1 {
+    display: none;
+  }
+  .localizacion {
+    align-content: center;
+  }
+  .localizacion-img {
+    width: 30em;
+    height: 30em;
+    margin: 1em;
+    padding: 1em;
+  }
+}
 .menutxt {
   font-family: "Bebas Neue", cursive;
   text-align: center;
@@ -240,6 +709,118 @@ footer .textFooter p {
   padding-bottom: 100px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .seccionImagenes {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    flex-wrap: wrap;
+  }
+  .seccionImagenes img {
+    height: 100%;
+  }
+  /* NAVBAR */
+  #mainmenu {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+  }
+  #mainmenu li a svg {
+    flex-wrap: wrap;
+    margin: 0%;
+    padding: 0%;
+    display: none;
+  }
+  .nav2 div {
+    width: 100%;
+  }
+  .footerimg img {
+    height: 100%;
+    width: 100%;
+  }
+  /* FAQ */
+  .mainFaq {
+    font-size: medium;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mainFaq h3 {
+    padding-top: 10px;
+    padding-right: 60px;
+  }
+  .menutxt {
+    font-size: x-large;
+  }
+  .sectionLi {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .form {
+    margin-right: 50em;
+  }
+  .li1 {
+    padding-right: 5em;
+    padding-bottom: 10em;
+  }
+  .wifi1 {
+    display: none;
+  }
+  .localizacion-img {
+    width: 30em;
+    height: 30em;
+    margin: 1em;
+    padding: 1em;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .seccionImagenes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #mainmenu li a svg {
+    display: none;
+  }
+  /* FAQ */
+  .sectionLi {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .form {
+    padding: 0px;
+  }
+  .form-action {
+    display: flex;
+    flex-direction: column;
+  }
+  .textArea {
+    margin: 10px 10px 10px 10px;
+  }
+  .mainFaq {
+    justify-content: center;
+    padding: 0px;
+  }
+  .mainFaq h3 {
+    align-items: flex-start;
+    text-align: start;
+    margin: 10px;
+  }
+  .li1 {
+    padding-left: 30px;
+    padding-bottom: 100px;
+  }
+  /* INFORMACION */
+  .wifi1 {
+    display: none;
+  }
+  .localizacion {
+    align-content: center;
+  }
+  .localizacion-img {
+    width: 30em;
+    height: 30em;
+    margin: 1em;
+    padding: 1em;
+  }
+}
 .subTitulo {
   font-family: "Bebas Neue", cursive;
   text-align: center;
@@ -270,6 +851,118 @@ footer .textFooter p {
   width: 100%;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .seccionImagenes {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    flex-wrap: wrap;
+  }
+  .seccionImagenes img {
+    height: 100%;
+  }
+  /* NAVBAR */
+  #mainmenu {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+  }
+  #mainmenu li a svg {
+    flex-wrap: wrap;
+    margin: 0%;
+    padding: 0%;
+    display: none;
+  }
+  .nav2 div {
+    width: 100%;
+  }
+  .footerimg img {
+    height: 100%;
+    width: 100%;
+  }
+  /* FAQ */
+  .mainFaq {
+    font-size: medium;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mainFaq h3 {
+    padding-top: 10px;
+    padding-right: 60px;
+  }
+  .menutxt {
+    font-size: x-large;
+  }
+  .sectionLi {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .form {
+    margin-right: 50em;
+  }
+  .li1 {
+    padding-right: 5em;
+    padding-bottom: 10em;
+  }
+  .wifi1 {
+    display: none;
+  }
+  .localizacion-img {
+    width: 30em;
+    height: 30em;
+    margin: 1em;
+    padding: 1em;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .seccionImagenes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #mainmenu li a svg {
+    display: none;
+  }
+  /* FAQ */
+  .sectionLi {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .form {
+    padding: 0px;
+  }
+  .form-action {
+    display: flex;
+    flex-direction: column;
+  }
+  .textArea {
+    margin: 10px 10px 10px 10px;
+  }
+  .mainFaq {
+    justify-content: center;
+    padding: 0px;
+  }
+  .mainFaq h3 {
+    align-items: flex-start;
+    text-align: start;
+    margin: 10px;
+  }
+  .li1 {
+    padding-left: 30px;
+    padding-bottom: 100px;
+  }
+  /* INFORMACION */
+  .wifi1 {
+    display: none;
+  }
+  .localizacion {
+    align-content: center;
+  }
+  .localizacion-img {
+    width: 30em;
+    height: 30em;
+    margin: 1em;
+    padding: 1em;
+  }
+}
 .subtitulo {
   font-family: "Bebas Neue", cursive;
   text-align: center;
@@ -353,6 +1046,118 @@ footer .textFooter p {
   padding-bottom: 1rem;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .seccionImagenes {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    flex-wrap: wrap;
+  }
+  .seccionImagenes img {
+    height: 100%;
+  }
+  /* NAVBAR */
+  #mainmenu {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+  }
+  #mainmenu li a svg {
+    flex-wrap: wrap;
+    margin: 0%;
+    padding: 0%;
+    display: none;
+  }
+  .nav2 div {
+    width: 100%;
+  }
+  .footerimg img {
+    height: 100%;
+    width: 100%;
+  }
+  /* FAQ */
+  .mainFaq {
+    font-size: medium;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mainFaq h3 {
+    padding-top: 10px;
+    padding-right: 60px;
+  }
+  .menutxt {
+    font-size: x-large;
+  }
+  .sectionLi {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .form {
+    margin-right: 50em;
+  }
+  .li1 {
+    padding-right: 5em;
+    padding-bottom: 10em;
+  }
+  .wifi1 {
+    display: none;
+  }
+  .localizacion-img {
+    width: 30em;
+    height: 30em;
+    margin: 1em;
+    padding: 1em;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .seccionImagenes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #mainmenu li a svg {
+    display: none;
+  }
+  /* FAQ */
+  .sectionLi {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .form {
+    padding: 0px;
+  }
+  .form-action {
+    display: flex;
+    flex-direction: column;
+  }
+  .textArea {
+    margin: 10px 10px 10px 10px;
+  }
+  .mainFaq {
+    justify-content: center;
+    padding: 0px;
+  }
+  .mainFaq h3 {
+    align-items: flex-start;
+    text-align: start;
+    margin: 10px;
+  }
+  .li1 {
+    padding-left: 30px;
+    padding-bottom: 100px;
+  }
+  /* INFORMACION */
+  .wifi1 {
+    display: none;
+  }
+  .localizacion {
+    align-content: center;
+  }
+  .localizacion-img {
+    width: 30em;
+    height: 30em;
+    margin: 1em;
+    padding: 1em;
+  }
+}
 .mainFaq {
   font-family: "Bebas Neue", cursive;
   font-size: x-large;
